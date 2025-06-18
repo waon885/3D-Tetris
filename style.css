@@ -86,9 +86,11 @@ canvas {
     margin-top: 20px;
     border: 1px solid #00FF00;
     padding: 10px;
+    width: 200px;
 }
 
 #controls-info p {
+    font-size: 12px;
     margin: 5px 0;
 }
 
