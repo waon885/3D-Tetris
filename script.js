@@ -12,9 +12,9 @@ let scene, camera, renderer, controls;
 let nextScene, nextCamera, nextRenderer;
 
 // Game constants
-const COLS = 5;
+const COLS = 7;
 const ROWS = 20;
-const DEPTH = 5;
+const DEPTH = 7;
 const BLOCK_SIZE = 1;
 
 // ----- Game State -----
