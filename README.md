@@ -10,3 +10,7 @@
 -レベルアップ : 合計で5つのレイヤーを消すごとにレベルが1上がります。レベルが上がると、ブロックの落下速度が速くなります。\
 ゲームオーバー:
 
+1. First list item
+   - First nested list item
+     - Second nested list item
+
