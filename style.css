@@ -1,0 +1,110 @@
+body {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    font-family: 'Press Start 2P', cursive;
+    gap: 30px; /* カラム間のスペース */
+    background-color: #0d0d0d; /* 少し明るく */
+    color: #00FF00;
+    padding-top: 20px;
+    min-height: 100vh; /* 画面全体の高さを確保 */
+    overflow: hidden; /* スクロールバーを隠す */
+}
+
+.game-column {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#left-column {
+    width: 220px; /* 幅を広げる */
+}
+
+#right-column {
+    width: 180px; 
+    padding-top: 60px; 
+}
+
+h1 {
+    color: #00FF00;
+    text-align: left; 
+    margin-bottom: 20px;
+    font-size: 32px;
+}
+
+#game-container {
+    position: relative;
+}
+
+#game-over-message {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: red;
+    font-size: 40px;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    z-index: 100;
+    pointer-events: none; /* メッセージがマウス操作を妨げないように */
+}
+
+.hidden {
+    display: none;
+}
+
+canvas {
+    border: 2px solid #00FF00;
+    background-color: #000;
+}
+
+#game-info {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#game-info p {
+    margin: 0;
+    font-size: 12px; /* 少し小さく */
+}
+
+.next-mino-container {
+    margin-top: 10px;
+}
+
+#nextMinoCanvas {
+    border: 2px solid #00FF00;
+    background-color: #000;
+}
+
+#controls-info {
+    margin-top: 20px;
+    border: 1px solid #00FF00;
+    padding: 10px;
+}
+
+#controls-info p {
+    margin: 5px 0;
+}
+
+
+button {
+    font-family: 'Press Start 2P', cursive;
+    background: #000000;
+    color: #00FF00;
+    padding: 15px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: 2px solid #00FF00;
+    text-align: center;
+}
+
+button:hover {
+    background: #00FF00;
+    color: #000000;
+}

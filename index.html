@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Tetris</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="game-column" id="left-column">
+        <h1>3D Tetris</h1>
+        <div id="game-info">
+            <p>STATUS: <span id="status">Ready</span></p>
+            <p>SCORE: <span id="score">0</span></p>
+            <p>LAYERS: <span id="lines">0</span></p> 
+            <p>LEVEL: <span id="level">1</span></p>
+            <div class="next-mino-container">
+                <p>NEXT</p>
+                <canvas id="nextMinoCanvas" width="160" height="160"></canvas>
+            </div>
+            <div id="controls-info">
+                <p>--- CONTROLS ---</p>
+                <p>MOVE: Arrow Keys</p>
+                <p>MOVE Z: Q / E</p>
+                <p>ROTATE X: W / S</p>
+                <p>ROTATE Y: A / D</p>
+                <p>ROTATE Z: Z / X</p>
+                <p>PAUSE/RESUME: Space</p> 
+                <p>VIEW: Mouse Drag</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="game-column" id="center-column">
+        <div id="game-container">
+            <div id="game-over-message" class="hidden">GAME OVER</div>
+            <canvas id="tetrisCanvas" width="400" height="600"></canvas>
+        </div>
+    </div>
+
+    <div class="game-column" id="right-column">
+        <button id="startButton">START</button>
+        <button id="pauseButton">PAUSE</button>
+        <button id="endGameButton">END</button>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
+    
+    <script src="script.js"></script>
+</body>
+</html>
